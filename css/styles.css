@@ -255,12 +255,28 @@ body {
 -------------------------------------------------- */
 
 .navbar-brand {
+  position: relative;
+  width: 150px;
+}
+
+.navbar-brand-icon {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  top: -45px;
+  right: 80px;
   width: 50px;
-  margin-left: 40px;
   padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar-brand-icon-doe {
+  position: absolute;
+  top: -15px;
+  right: 15 spx;
+  height: 80px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .nav-link {
@@ -278,6 +294,17 @@ body {
   border-bottom: 3px solid var(--primary);
 }
 
+.nav-button-hover:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 1366px) {
+  .nav-link {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
 /* COUNTER
 -------------------------------------------------- */
 .counter-section i {
@@ -287,7 +314,7 @@ body {
 
 .counter-section span.counter {
   font-size: 40px;
-  color: #000;
+  color: white;
   line-height: 60px;
   display: block;
   font-family: "Oswald", sans-serif;
@@ -329,6 +356,22 @@ body {
 .medium-icon {
   font-size: 40px !important;
   margin-bottom: 15px !important;
+  color: white;
+}
+
+.contador-mala {
+  background: url("../assets/img/mala-1.png") no-repeat center;
+  background-size: contain;
+  padding: 35px 20px 100px;
+}
+
+.btn-doar {
+  background-color: #000000;
+  color: #ffffff;
+  background-image: url("../assets/img/mala-2.png");
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 /* REMOVER
@@ -349,4 +392,12 @@ body {
 
 .quadro {
   background-color: var(--primary);
+}
+
+.btn-social {
+  color: var(--primary);
+}
+
+.btn-social:hover {
+  color: var(--primary);
 }
