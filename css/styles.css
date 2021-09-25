@@ -31,7 +31,7 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #b8dee2;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -400,4 +400,24 @@ body {
 
 .btn-social:hover {
   color: var(--primary);
+}
+
+.bg-mala {
+  --bs-bg-opacity: 1;
+  background-color: var(--primary) !important;
+}
+
+.bg-mala-escuro {
+  --bs-bg-opacity: 3;
+  background-color: var(--dark) !important;
+}
+
+a {
+  color: #1687a7;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #0d5063;
+  text-decoration: underline;
 }
