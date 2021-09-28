@@ -25,7 +25,8 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #caf1f1;
-  --secondary: #6c757d;
+  --secondary: #b98345;
+  --secondary-dark: #855a2a;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -86,14 +87,14 @@ body {
 }
 
 .btn-primary {
-  color: #5a5a5a;
-  background-color: var(--dark);
-  border-color: var(--dark);
+  color: #fff;
+  background-color: var(--secondary);
+  border-color: var(--secondary);
 }
 .btn-primary:hover {
-  color: #5a5a5a;
-  background-color: var(--primary);
-  border-color: var(--primary);
+  color: #fff;
+  background-color: var(--secondary-dark);
+  border-color: var(--secondary-dark);
 }
 
 /* CUSTOMIZE THE CAROUSEL
