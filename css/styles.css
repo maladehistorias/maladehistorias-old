@@ -85,6 +85,17 @@ body {
   color: #5a5a5a;
 }
 
+.btn-primary {
+  color: #5a5a5a;
+  background-color: var(--dark);
+  border-color: var(--dark);
+}
+.btn-primary:hover {
+  color: #5a5a5a;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -100,23 +111,35 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 40rem;
 }
 
 .carousel-img-1 {
-  background-image: url("../assets/img/carousel1.JPG");
+  background-image: url("../assets/img/carousel/img1.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .carousel-img-2 {
-  background-image: url("../assets/img/carousel2.JPG");
+  background-image: url("../assets/img/carousel/img2.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .carousel-img-3 {
-  background-image: url("../assets/img/carousel1.JPG");
+  background-image: url("../assets/img/carousel/img3.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-img-4 {
+  background-image: url("../assets/img/carousel/img4.JPEG");
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-img-5 {
+  background-image: url("../assets/img/carousel/img5.jpeg");
   background-position: center;
   background-size: cover;
 }
@@ -417,7 +440,7 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
-a:hover {
+/* a:hover {
   color: #0d5063;
   text-decoration: underline;
-}
+} */
