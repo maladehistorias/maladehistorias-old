@@ -112,7 +112,13 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 40rem;
+  height: 42rem;
+}
+
+@media (max-width: 1366px) {
+  .carousel-item {
+    height: 32rem;
+  }
 }
 
 .carousel-img-1 {
@@ -286,7 +292,7 @@ body {
 .navbar-brand-icon {
   position: absolute;
   top: -45px;
-  right: 80px;
+  right: 175px;
   width: 50px;
   padding: 10px;
   margin-left: 10px;
@@ -296,7 +302,7 @@ body {
 .navbar-brand-icon-doe {
   position: absolute;
   top: -15px;
-  right: 15 spx;
+  right: -65px;
   height: 80px;
   padding: 10px;
   margin-left: 10px;
@@ -346,7 +352,8 @@ body {
 }
 
 .counter-title {
-  font-size: 12px;
+  margin-top: 10px;
+  font-size: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
