@@ -299,6 +299,12 @@ body {
   margin-right: 10px;
 }
 
+@media (max-width: 1366px) {
+  .navbar-brand-icon {
+    right: 80px;
+  }
+}
+
 .navbar-brand-icon-doe {
   position: absolute;
   top: -15px;
