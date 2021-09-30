@@ -57,28 +57,28 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
 
 // counter();
 
-// $(window).on("activate.bs.scrollspy", function (e) {
-//   if (e.relatedTarget == "#oquefazemos") {
-//     // animateValue('counter-1', 0, 2820498);
-//     counter();
-//   }
-// });
+$(window).on("activate.bs.scrollspy", function (e) {
+  if (e.relatedTarget == "#oquefazemos") {
+    // animateValue('counter-1', 0, 2820498);
+    counter();
+  }
+});
 
-// function counter() {
-//   $(".counter").each(function () {
-//     $(this)
-//       .prop("Counter", 0)
-//       .animate(
-//         {
-//           Counter: $(this).text(),
-//         },
-//         {
-//           duration: 4000,
-//           easing: "swing",
-//           step: function (now) {
-//             $(this).text(Math.ceil(now));
-//           },
-//         }
-//       );
-//   });
-// }
+function counter() {
+  $(".counter").each(function () {
+    $(this)
+      .prop("Counter", 0)
+      .animate(
+        {
+          Counter: $(this).text(),
+        },
+        {
+          duration: 4000,
+          easing: "swing",
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          },
+        }
+      );
+  });
+}
