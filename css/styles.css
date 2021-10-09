@@ -33,6 +33,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #b8dee2;
+  --background-dark: #00000050;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -122,31 +123,32 @@ body {
 }
 
 .carousel-img-1 {
-  background-image: url("../assets/img/carousel/img1.jpg");
-  background-position: center;
+  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img1.jpg");
+  background-position: top center;
+  background-color: #000000;
   background-size: cover;
 }
 
 .carousel-img-2 {
-  background-image: url("../assets/img/carousel/img2.jpg");
-  background-position: center;
+  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img2.jpg");
+  background-position: top center;
   background-size: cover;
 }
 
 .carousel-img-3 {
-  background-image: url("../assets/img/carousel/img3.jpeg");
+  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img3.jpeg");
   background-position: center;
   background-size: cover;
 }
 
 .carousel-img-4 {
-  background-image: url("../assets/img/carousel/img4.JPEG");
-  background-position: center;
+  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img4.JPEG");
+  background-position: top center;
   background-size: cover;
 }
 
 .carousel-img-5 {
-  background-image: url("../assets/img/carousel/img5.jpeg");
+  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img5.jpeg");
   background-position: center;
   background-size: cover;
 }
