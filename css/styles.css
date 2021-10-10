@@ -97,6 +97,22 @@ body {
   background-color: var(--secondary-dark);
   border-color: var(--secondary-dark);
 }
+.btn-outline-primary{
+  color: var(--secondary-dark);
+  border-color: var(--secondary);
+}
+.btn-outline-primary:hover{
+  color: #fff;
+  background-color: var(--secondary-dark);
+  border-color: var(--secondary);
+}
+.border-primary {
+  border-color: var(--secondary) !important;
+}
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: var(--secondary)!important;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -355,7 +371,6 @@ body {
   color: white;
   line-height: 60px;
   display: block;
-  font-family: "Oswald", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -429,6 +444,9 @@ body {
   }
 }
 
+/* OUTROS
+-------------------------------------------------- */
+
 .quadro {
   background-color: var(--primary);
 }
@@ -460,3 +478,37 @@ a {
   color: #0d5063;
   text-decoration: underline;
 } */
+
+.painel-titulo-colabore {
+  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img1.jpg");
+  background-position: top center;
+  background-color: #000000;
+  background-size: cover;
+}
+
+.painel-titulo-padrinho {
+  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img2.jpg");
+  background-position: top center;
+  background-color: #000000;
+  background-size: cover;
+}
+
+.painel-titulo-caption{
+  position: relative;
+  top: 80%;
+  color: #fff;
+  text-align: center;
+}
+
+.painel-titulo {
+  height: 32rem;
+}
+
+.endereco {
+  margin-bottom: 0%;
+}
+
+.pontos {
+  margin-top: 1rem;
+}
+
