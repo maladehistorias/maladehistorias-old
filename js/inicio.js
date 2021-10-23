@@ -2,7 +2,6 @@ var activate = true;
 
 function counter() {
   if (activate) {
-    console.log("counter");
     activate = false;
     $(".counter").each(function () {
       $(this)

@@ -83,7 +83,6 @@ body {
   text-align: left;
   background-color: #ffffff;
   padding-top: 3rem;
-  padding-bottom: 3rem;
   color: #5a5a5a;
 }
 
@@ -97,11 +96,11 @@ body {
   background-color: var(--secondary-dark);
   border-color: var(--secondary-dark);
 }
-.btn-outline-primary{
+.btn-outline-primary {
   color: var(--secondary-dark);
   border-color: var(--secondary);
 }
-.btn-outline-primary:hover{
+.btn-outline-primary:hover {
   color: #fff;
   background-color: var(--secondary-dark);
   border-color: var(--secondary);
@@ -111,7 +110,7 @@ body {
 }
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: var(--secondary)!important;
+  background-color: var(--secondary) !important;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -139,32 +138,37 @@ body {
 }
 
 .carousel-img-1 {
-  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img1.jpg");
+  background: linear-gradient(var(--background-dark), var(--background-dark)),
+    url("../assets/img/carousel/img1.jpg");
   background-position: top center;
   background-color: #000000;
   background-size: cover;
 }
 
 .carousel-img-2 {
-  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img2.jpg");
+  background: linear-gradient(var(--background-dark), var(--background-dark)),
+    url("../assets/img/carousel/img2.jpg");
   background-position: top center;
   background-size: cover;
 }
 
 .carousel-img-3 {
-  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img3.jpeg");
+  background: linear-gradient(var(--background-dark), var(--background-dark)),
+    url("../assets/img/carousel/img3.jpeg");
   background-position: center;
   background-size: cover;
 }
 
 .carousel-img-4 {
-  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img4.JPEG");
+  background: linear-gradient(var(--background-dark), var(--background-dark)),
+    url("../assets/img/carousel/img4.JPEG");
   background-position: top center;
   background-size: cover;
 }
 
 .carousel-img-5 {
-  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img5.jpeg");
+  background: linear-gradient(var(--background-dark), var(--background-dark)),
+    url("../assets/img/carousel/img5.jpeg");
   background-position: center;
   background-size: cover;
 }
@@ -310,23 +314,17 @@ body {
 .navbar-brand-icon {
   position: absolute;
   top: -45px;
-  right: 175px;
+  right: 80px;
   width: 50px;
   padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-@media (max-width: 1366px) {
-  .navbar-brand-icon {
-    right: 80px;
-  }
-}
-
 .navbar-brand-icon-doe {
   position: absolute;
   top: -15px;
-  right: -65px;
+  right: 20px;
   height: 80px;
   padding: 10px;
   margin-left: 10px;
@@ -419,15 +417,6 @@ body {
   padding: 35px 20px 100px;
 }
 
-.btn-doar {
-  background-color: #000000;
-  color: #ffffff;
-  background-image: url("../assets/img/mala-2.png");
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
 /* REMOVER
 -------------------------------------------------- */
 .bd-placeholder-img {
@@ -480,20 +469,22 @@ a {
 } */
 
 .painel-titulo-colabore {
-  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img1.jpg");
+  background: linear-gradient(var(--background-dark), var(--background-dark)),
+    url("../assets/img/carousel/img1.jpg");
   background-position: top center;
   background-color: #000000;
   background-size: cover;
 }
 
 .painel-titulo-padrinho {
-  background: linear-gradient(var(--background-dark), var(--background-dark)), url("../assets/img/carousel/img2.jpg");
+  background: linear-gradient(var(--background-dark), var(--background-dark)),
+    url("../assets/img/carousel/img2.jpg");
   background-position: top center;
   background-color: #000000;
   background-size: cover;
 }
 
-.painel-titulo-caption{
+.painel-titulo-caption {
   position: relative;
   top: 80%;
   color: #fff;
@@ -512,3 +503,9 @@ a {
   margin-top: 1rem;
 }
 
+.doe-card {
+  flex-direction: column;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
