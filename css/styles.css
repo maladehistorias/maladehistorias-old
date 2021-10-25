@@ -138,6 +138,11 @@ h6 {
   z-index: 10;
 }
 
+.carousel-caption h1 {
+  font-family: "Permanent Marker", cursive;
+  color: var(--white);
+}
+
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 42rem;
@@ -313,6 +318,11 @@ h6 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.titulo-card {
+  font-family: "Permanent Marker", cursive;
+  color: var(--white);
 }
 
 /* NAV-BAR
@@ -517,9 +527,12 @@ a {
 .painel-titulo-caption {
   position: relative;
   top: 80%;
-  color: #fff;
   text-align: center;
+}
+
+.painel-titulo-caption h1 {
   font-family: "Permanent Marker", cursive;
+  color: var(--white);
 }
 
 .painel-titulo {
