@@ -22,7 +22,7 @@
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #f4f9f9;
-  --gray: #6c757d;
+  --gray: #5a5a5a;
   --gray-dark: #343a40;
   --primary: #caf1f1;
   --secondary: #b98345;
@@ -85,7 +85,7 @@ body {
   text-align: left;
   background-color: #ffffff;
   padding-top: 3rem;
-  color: #5a5a5a;
+  color: var(--gray);
 }
 
 h1,
@@ -552,4 +552,10 @@ a {
   height: 20rem;
   display: flex;
   justify-content: space-between;
+}
+
+.text-footer {
+  text-transform: uppercase !important;
+  font-family: "Permanent Marker", cursive;
+  color: var(--gray);
 }
