@@ -22,7 +22,7 @@
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #f4f9f9;
-  --gray: #5a5a5a;
+  --gray: #797878;
   --gray-dark: #343a40;
   --primary: #caf1f1;
   --secondary: #b98345;
@@ -34,6 +34,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #b8dee2;
+  --texto: #5a5a5a;
   --background-dark: #00000050;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -85,7 +86,7 @@ body {
   text-align: left;
   background-color: #ffffff;
   padding-top: 3rem;
-  color: var(--gray);
+  color: var(--texto);
 }
 
 h1,
@@ -385,8 +386,12 @@ h6 {
   border-bottom: 3px solid var(--primary);
 }
 
-.nav-button-hover:hover {
-  color: var(--primary);
+.nav-button-social:hover {
+  color: var(--secondary-dark1);
+}
+
+.nav-button-social {
+  color: var(--secondary);
 }
 
 @media (max-width: 1366px) {
@@ -417,6 +422,7 @@ h6 {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "Permanent Marker", cursive;
+  color: var(--gray);
 }
 
 .counter-icon {
@@ -555,6 +561,13 @@ a {
 }
 
 .text-footer {
+  text-transform: uppercase !important;
+  font-family: "Permanent Marker", cursive;
+  color: var(--gray);
+}
+
+.quadro h1,
+.quadro h2 {
   text-transform: uppercase !important;
   font-family: "Permanent Marker", cursive;
   color: var(--gray);
