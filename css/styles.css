@@ -26,7 +26,8 @@
   --gray-dark: #343a40;
   --primary: #caf1f1;
   --secondary: #b98345;
-  --secondary-dark: #855a2a;
+  --secondary-dark1: #855a2a;
+  --secondary-dark2: #a87438;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -104,16 +105,16 @@ h6 {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: var(--secondary-dark);
-  border-color: var(--secondary-dark);
+  background-color: var(--secondary-dark1);
+  border-color: var(--secondary-dark1);
 }
 .btn-outline-primary {
-  color: var(--secondary-dark);
+  color: var(--secondary-dark1);
   border-color: var(--secondary);
 }
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: var(--secondary-dark);
+  background-color: var(--secondary-dark1);
   border-color: var(--secondary);
 }
 .border-primary {
@@ -347,7 +348,22 @@ h6 {
   margin-left: 25px;
   margin-right: 25px;
   font-family: "Permanent Marker", cursive;
+}
+
+.navbar-text {
   color: var(--secondary);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--secondary);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--secondary-dark2);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--secondary-dark2);
 }
 
 .active {
@@ -390,6 +406,7 @@ h6 {
   font-size: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-family: "Permanent Marker", cursive;
 }
 
 .counter-icon {
