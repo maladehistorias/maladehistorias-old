@@ -104,6 +104,7 @@ h6 {
   color: #fff;
   background-color: var(--secondary);
   border-color: var(--secondary);
+  font-family: "Luckiest Guy", cursive;
 }
 .btn-primary:hover {
   color: #fff;
@@ -113,6 +114,7 @@ h6 {
 .btn-outline-primary {
   color: var(--secondary-dark1);
   border-color: var(--secondary);
+  font-family: "Luckiest Guy", cursive;
 }
 .btn-outline-primary:hover {
   color: #fff;
@@ -144,6 +146,7 @@ h6 {
   /* font-family: "Permanent Marker", cursive; */
   font-family: "Luckiest Guy", cursive;
   color: var(--white);
+  font-size: 290%;
 }
 
 /* Declare heights because of positioning of img element */
@@ -165,31 +168,31 @@ h6 {
   background-size: cover;
 }
 
-.carousel-img-2 {
+.carousel-img-5 {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
     url("../assets/img/carousel/img2.jpg");
   background-position: top center;
   background-size: cover;
 }
 
-.carousel-img-3 {
+.carousel-img-4 {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
     url("../assets/img/carousel/img3.jpeg");
   background-position: center;
   background-size: cover;
 }
 
-.carousel-img-4 {
+.carousel-img-3 {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/carousel/img4.JPEG");
-  background-position: top center;
+    url("../assets/img/carousel/IMG_6225.jpeg");
+  background-position: center;
   background-size: cover;
 }
 
-.carousel-img-5 {
+.carousel-img-2 {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/carousel/img5.jpeg");
-  background-position: center;
+    url("../assets/img/carousel/IMG_9741.jpeg");
+  background-position: top;
   background-size: cover;
 }
 
@@ -227,6 +230,17 @@ h6 {
   letter-spacing: -0.05rem;
 }
 
+.featurette-titulo {
+  margin-top: 0;
+  margin-bottom: 7rem;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+  /* rtl:remove */
+  letter-spacing: -0.05rem;
+  font-size: 50px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -240,11 +254,6 @@ h6 {
 
   .featurette-heading {
     font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
     margin-top: 7rem;
   }
 }
@@ -419,6 +428,7 @@ h6 {
   line-height: 60px;
   display: block;
   letter-spacing: 2px;
+  font-family: "Luckiest Guy", cursive;
 }
 
 .counter-title {
@@ -519,6 +529,33 @@ a {
   color: #0d5063;
   text-decoration: underline;
 } */
+
+.painel-titulo-capa {
+  background: linear-gradient(var(--background-dark), var(--background-dark)),
+    url("../assets/img/IMG_9797.JPEG");
+  background-position: center;
+  background-color: #000000;
+  background-size: cover;
+}
+
+.painel-capa {
+  color: var(--white);
+  padding: 1rem 1rem;
+  font-family: "Luckiest Guy", cursive;
+  color: var(--white);
+  text-align: center;
+}
+
+.painel-capa h1 {
+  color: var(--white);
+  font-size: 500%;
+}
+
+.painel-capa p {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 150%;
+}
 
 .painel-titulo-colabore {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
