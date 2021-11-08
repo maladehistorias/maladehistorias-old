@@ -92,7 +92,7 @@
                 >
               </li>
               <li class="nav-item d-inline d-xl-none">
-                <a class="nav-link js-scroll-trigger" href="#page-top">DOE AQUI</a>
+                <a class="nav-link js-scroll-trigger" href="doe.html">DOE AQUI</a>
               </li>
               <li class="nav-item">
                 <a
@@ -144,66 +144,124 @@
       </nav>
       <div class="painel-titulo-padrinho painel-titulo">
         <div class="painel-titulo-caption">
-          <h1 class="display-4 fw-normal">Doe</h1>
+          <h1 class="display-4 fw-normal">Doação Única</h1>
         </div>
       </div>
     </header>
 
     <main class="container py-4">
       <div class="container marketing">
-        <!-- START THE FEATURETTES -->
 
-        <br />
-        <br />
-
-        <div>
-          <div class="row featurette">
-              <div class="col-md-12">
-                  <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-              </div>
+        <div class="row featurette">
+          <div>
+            <h2 class="featurette-heading"></h2>
+            <p class="lead">
+              Considere o programa de padrinhos para doações mensais...
+            </p>
+            <a
+              class="btn btn-lg btn-primary"
+              href="padrinho.html"
+              role="button"
+              >Saiba mais &raquo;</a
+            >
+            <br/>
+            <br/>
           </div>
+        </div>
 
-          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 >Faça uma contribuição</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+        <div class="quadro p-5 rounded">
+          <div id="smart-button-container">
+            <div style="text-align: center"><label for="amount">Valor </label><input name="amountInput" type="number" id="amount" value="" ><span> Reais</span></div>
+              <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Por favor, digite um valor de no mínimo R$ 20,00</p>
+            <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
           </div>
+          <script src="https://www.paypal.com/sdk/js?client-id=AZm3CUvuCCbW44Dm7scehioVEMtZiObSbjij_n3YQi5_KtkJor6fNeeehcdF3J55hPectFz7qeGPTOrU&enable-funding=venmo&currency=BRL" data-sdk-integration-source="button-factory"></script>
+          <script>
+          function initPayPalButton() {
+            var amount = document.querySelector('#smart-button-container #amount');
+            var priceError = document.querySelector('#smart-button-container #priceLabelError');
+        
+            var elArr = [amount];
+        
+            var purchase_units = [{"amount":{"currency_code":"BRL","value":1,"breakdown":{"item_total":{"currency_code":"BRL","value":1}}},"items":[{"name":"item name","unit_amount":{"currency_code":"BRL","value":1},"quantity":"1","category":"DONATION"}]}]
+        
+            function validate(event) {
+              return event.value.length > 0 && event.value >= 20;
+            }
+        
+            paypal.Buttons({
+              style: {
+                color: 'blue',
+                shape: 'rect',
+                label: 'donate',
+                layout: 'vertical',
+                
+              },
+        
+              onInit: function (data, actions) {
+                actions.disable();
+        
+                elArr.forEach(function (item) {
+                  item.addEventListener('keyup', function (event) {
+                    var result = elArr.every(validate);
+                    if (result) {
+                      actions.enable();
+                    } else {
+                      actions.disable();
+                    }
+                  });
+                });
+              },
+        
+              onClick: function () {
+        
+                if (amount.value.length < 20) {
+                  priceError.style.visibility = "visible";
+                } else {
+                  priceError.style.visibility = "hidden";
+                }
+        
+                purchase_units[0].description = "Doação Mala de Histórias";
+                purchase_units[0].amount.value = amount.value;
+                purchase_units[0].amount.breakdown.item_total.value = amount.value;
+                purchase_units[0].items[0].unit_amount.value = amount.value;
+              },
+        
+              createOrder: function (data, actions) {
+                return actions.order.create({
+                  purchase_units: purchase_units,
+                });
+              },
+        
+              onApprove: function (data, actions) {
+                return actions.order.capture().then(function (orderData) {
+        
+                  // Full available details
+                  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+        
+                  // Show a success message within this page, e.g.
+                  const element = document.getElementById('paypal-button-container');
+                  element.innerHTML = '';
+                  element.innerHTML = '<h3>Agradecemos a sua doação!</h3>';
+        
+                  // Or go to another URL:  actions.redirect('thank_you.html');
+                  
+                });
+              },
+        
+              onError: function (err) {
+                console.log(err);
+              }
+            }).render('#paypal-button-container');
+          }
+          initPayPalButton();
+          </script>
+        </div>
 
-          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-            <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                <div class="card-body doe-card">
-                  <h2 class="card-title">Pix</h2>
-                  <ul class="list-unstyled mt-3 mb-4 align-center">
-                    <li>Faça uma doação com pix</li>
-                    <li>Chave Pix:</li>
-                    <li>62999523805</li>
-                  </ul>
-                  </br>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                <div class="card-body doe-card">
-                  <h2 class="card-title">PayPal</h2>
-                  <p>Faça uma doação com cartão de crédito pelo PayPal</p>
-                  <a  href="doar.html"><button type="button" class="w-100 btn btn-lg btn-primary botao-doe-card">Selecionar</button></a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                <div class="card-body doe-card">
-                  <h2 class="card-title">Seja um Padrinho</h2>
-                  <p>Conheça o programa de apadrinhamento da Mala de Histórias e faça doações recorrentes...</p>
-                  <a  href="padrinho.html"><button type="button" class="w-100 btn btn-lg btn-primary botao-doe-card">Selecionar</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        
+        
           
 
-        <!-- /END THE FEATURETTES -->
       </div>
       <!-- /.container -->
     </main>
