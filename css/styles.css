@@ -89,6 +89,18 @@ body {
   color: var(--texto);
 }
 
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -147,6 +159,15 @@ h6 {
   font-family: "Luckiest Guy", cursive;
   color: var(--white);
   font-size: 290%;
+}
+
+@media (max-width: 500px) {
+  .carousel-caption h1 {
+    /* font-family: "Permanent Marker", cursive; */
+    font-family: "Luckiest Guy", cursive;
+    color: var(--white);
+    font-size: 200%;
+  }
 }
 
 /* Declare heights because of positioning of img element */
@@ -226,8 +247,6 @@ h6 {
   font-weight: 300;
   line-height: 1;
   text-align: center;
-  /* rtl:remove */
-  letter-spacing: -0.05rem;
 }
 
 .featurette-titulo {
@@ -236,7 +255,16 @@ h6 {
   font-weight: 300;
   line-height: 1;
   text-align: center;
-  /* rtl:remove */
+  letter-spacing: -0.05rem;
+  font-size: 50px;
+}
+
+.titulo-pagina {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
   letter-spacing: -0.05rem;
   font-size: 50px;
 }
@@ -555,6 +583,22 @@ a {
   padding-top: 5%;
   padding-bottom: 5%;
   font-size: 150%;
+}
+
+.painel-titulo-oquefazemos {
+  background: linear-gradient(var(--background-dark), var(--background-dark)),
+    url("../assets/img/carousel/img1.jpg");
+  background-position: top center;
+  background-color: #000000;
+  background-size: cover;
+}
+
+.painel-titulo-transparencia {
+  background: linear-gradient(var(--background-dark), var(--background-dark)),
+    url("../assets/img/carousel/img1.jpg");
+  background-position: top center;
+  background-color: #000000;
+  background-size: cover;
 }
 
 .painel-titulo-colabore {
