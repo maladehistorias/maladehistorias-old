@@ -617,6 +617,14 @@ a {
   background-size: cover;
 }
 
+.painel-titulo-doe {
+  background: linear-gradient(var(--background-dark), var(--background-dark)),
+    url("../assets/img/carousel/img2.jpg");
+  background-position: top center;
+  background-color: #000000;
+  background-size: cover;
+}
+
 .painel-titulo-caption {
   position: relative;
   top: 80%;
