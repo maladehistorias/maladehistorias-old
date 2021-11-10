@@ -160,69 +160,59 @@
           <div class="row featurette">
             <h2 class="titulo-pagina d-inline d-xl-none">Seja um Padrinho</h2>
               <div class="col-md-12">
-                  <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                  <p class="lead">
+                    Se você também acredita no poder transformador da literatura e 
+                    deseja contribuir com a continuidade dos trabalhos da Mala de 
+                    Histórias de maneira recorrente, conheça o nosso 
+                  </p>
               </div>
           </div>
 
           <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 >Programa de Apadrinhamento Mala de Histórias</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+            <h1 >Programa de Apadrinhamento <br> da Mala de Histórias</h1>
           </div>
 
-          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-            <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                  <h4 class="my-0 fw-normal">Padrinho 1</h4>
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title pricing-card-title">R$10<small class="text-muted fw-light">/mês</small></h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-outline-primary">Selecionar</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                  <h4 class="my-0 fw-normal">Padrinho 2</h4>
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title pricing-card-title">R$20<small class="text-muted fw-light">/mês</small></h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>20 users included</li>
-                    <li>10 GB of storage</li>
-                    <li>Priority email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-primary">Selecionar</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                <div class="card-header py-3 text-white bg-primary border-primary">
-                  <h4 class="my-0 fw-normal">Padrinho 3</h4>
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title pricing-card-title">R$50<small class="text-muted fw-light">/mês</small></h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>30 users included</li>
-                    <li>15 GB of storage</li>
-                    <li>Phone and email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-primary">Selecionar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
+          <p class="class lead">
+            Doando uma quantia fixa mensalmente a partir de R$ 20,00, 
+            você será considerado padrinho da Mala de Histórias e 
+            receberá informações exclusivas sobre as nossas atividades 
+            diretamente em seu e-mail.
+          </p>
+          <p class="class lead">
+          Para se tornar padrinho da Mala de Histórias, clique no botão 
+          abaixo escrito “SEJA PADRINHO” e uma janela do PayPall será 
+          aberta para que você preencha os seus dados e a quantia a ser 
+          doada mensalmente. 
+          </p>
+          <p class="class lead">
+          Não se esqueça de selecionar a caixinha de “Fazer desta uma 
+          doação mensal” quando for fazer o pagamento no PayPall. 
+          E, se possível, adicione a tarifa de processamento em sua doação, 
+          para que o valor doado seja inteiramente revertido para a 
+          Mala de Histórias, sem desconto de quaisquer taxas.
+          </p>
+          <p class="class lead">
+          E aí, padrinho da Mala de Histórias? Preparado para escrever 
+          novos capítulos dessa história conosco?
+          </p>
+
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <div id="donate-button-container" height="10px">
+              <div id="donate-button"></div>
+              <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+              <script>
+              PayPal.Donation.Button({
+              env:'production',
+              hosted_button_id:'QYTMYJ3VWEQJQ',
+              image: {
+              src:'assets/img/botao-padrinho.png',
+              alt:'Faça doações com o botão do PayPal',
+              title:'PayPal - The safer, easier way to pay online!',
+              }
+              }).render('#donate-button');
+              </script>
+            </div>   
+          </div>                 
 
         <!-- /END THE FEATURETTES -->
       </div>

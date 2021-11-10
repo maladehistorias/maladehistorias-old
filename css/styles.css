@@ -112,6 +112,10 @@ h6 {
   color: var(--secondary);
 }
 
+strong {
+  font-weight: bold;
+}
+
 .btn-primary {
   color: #fff;
   background-color: var(--secondary);
@@ -144,10 +148,6 @@ h6 {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
@@ -221,7 +221,7 @@ h6 {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.marketing .col-lg-6 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -229,7 +229,7 @@ h6 {
   font-weight: 400;
 }
 /* rtl:begin:ignore */
-.marketing .col-lg-4 p {
+.marketing .col-lg-6 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
@@ -251,7 +251,7 @@ h6 {
 
 .featurette-titulo {
   margin-top: 0;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
   font-weight: 300;
   line-height: 1;
   text-align: center;
@@ -362,9 +362,14 @@ h6 {
 }
 
 .titulo-card {
-  /* font-family: "Permanent Marker", cursive; */
   font-family: "Luckiest Guy", cursive;
   color: var(--white);
+}
+
+.titulo-card-horizontal {
+  font-family: "Luckiest Guy", cursive;
+  color: var(--white);
+  font-size: 165%;
 }
 
 /* NAV-BAR
@@ -419,15 +424,6 @@ h6 {
   color: var(--secondary-dark2);
 }
 
-.active {
-  border-bottom: 3px solid var(--primary);
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  border-bottom: 3px solid var(--primary);
-}
-
 .nav-button-social:hover {
   color: var(--secondary-dark1);
 }
@@ -440,6 +436,17 @@ h6 {
   .nav-link {
     margin-left: 5px;
     margin-right: 5px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .navbar-light .navbar-nav .nav-link.active {
+    border-bottom: 3px solid var(--primary);
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    border-bottom: 3px solid var(--primary);
   }
 }
 
@@ -530,6 +537,10 @@ h6 {
   background-color: var(--primary);
 }
 
+.quadro-diretores {
+  margin: 50px;
+}
+
 .btn-social {
   color: var(--primary);
 }
@@ -564,6 +575,7 @@ a {
   background-position: center;
   background-color: #000000;
   background-size: cover;
+  border: 20px solid var(--secondary);
 }
 
 .painel-capa {
@@ -585,33 +597,41 @@ a {
   font-size: 150%;
 }
 
+.painel-titulo-mala-de-historias {
+  background: linear-gradient(var(--background-dark), var(--background-dark)),
+    url("../assets/img/IMG_4680.JPEG");
+  background-position: top center;
+  background-color: #000000;
+  background-size: cover;
+}
+
 .painel-titulo-oquefazemos {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/carousel/img1.jpg");
-  background-position: top center;
+    url("../assets/img/oquefazemos.JPG");
+  background-position: center;
   background-color: #000000;
   background-size: cover;
 }
 
 .painel-titulo-transparencia {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/carousel/img1.jpg");
-  background-position: top center;
+    url("../assets/img/transparencia.JPEG");
+  background-position: center;
   background-color: #000000;
   background-size: cover;
 }
 
 .painel-titulo-colabore {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/carousel/img1.jpg");
-  background-position: top center;
+    url("../assets/img/IMG_5366.JPEG");
+  background-position: center;
   background-color: #000000;
   background-size: cover;
 }
 
 .painel-titulo-padrinho {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/carousel/img2.jpg");
+    url("../assets/img/IMG_4653.JPEG");
   background-position: top center;
   background-color: #000000;
   background-size: cover;
@@ -619,8 +639,8 @@ a {
 
 .painel-titulo-doe {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/carousel/img2.jpg");
-  background-position: top center;
+    url("../assets/img/IMG_9705.JPEG");
+  background-position: center;
   background-color: #000000;
   background-size: cover;
 }
