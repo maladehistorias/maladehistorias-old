@@ -205,14 +205,14 @@ strong {
 
 .carousel-img-3 {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/carousel/IMG_6225.jpeg");
+    url("../assets/img/carousel/img4.jpeg");
   background-position: center;
   background-size: cover;
 }
 
 .carousel-img-2 {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/carousel/IMG_9741.jpeg");
+    url("../assets/img/carousel/img5.jpeg");
   background-position: top;
   background-size: cover;
 }
@@ -509,7 +509,7 @@ strong {
 }
 
 .contador-mala {
-  background: url("../assets/img/mala-1.png") no-repeat center;
+  background: url("../assets/img/contador.png") no-repeat center;
   background-size: contain;
   padding: 35px 20px 100px;
 }
@@ -571,7 +571,7 @@ a {
 
 .painel-titulo-capa {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/IMG_9797.JPEG");
+    url("../assets/img/painel/img1.JPEG");
   background-position: center;
   background-color: #000000;
   background-size: cover;
@@ -599,7 +599,7 @@ a {
 
 .painel-titulo-mala-de-historias {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/IMG_4680.JPEG");
+    url("../assets/img/painel/img2.JPEG");
   background-position: top center;
   background-color: #000000;
   background-size: cover;
@@ -607,7 +607,7 @@ a {
 
 .painel-titulo-oquefazemos {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/oquefazemos.JPG");
+    url("../assets/img/painel/img3.JPG");
   background-position: center;
   background-color: #000000;
   background-size: cover;
@@ -615,7 +615,7 @@ a {
 
 .painel-titulo-transparencia {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/transparencia.JPEG");
+    url("../assets/img/painel/img5.JPEG");
   background-position: center;
   background-color: #000000;
   background-size: cover;
@@ -623,7 +623,7 @@ a {
 
 .painel-titulo-colabore {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/IMG_5366.JPEG");
+    url("../assets/img/painel/img4.JPEG");
   background-position: center;
   background-color: #000000;
   background-size: cover;
