@@ -205,7 +205,7 @@ strong {
 
 .carousel-img-3 {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/carousel/img4.jpeg");
+    url("../assets/img/carousel/img4.JPEG");
   background-position: center;
   background-size: cover;
 }
@@ -631,7 +631,7 @@ a {
 
 .painel-titulo-padrinho {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/IMG_4653.JPEG");
+    url("../assets/img/painel/img6.JPEG");
   background-position: top center;
   background-color: #000000;
   background-size: cover;
@@ -639,7 +639,7 @@ a {
 
 .painel-titulo-doe {
   background: linear-gradient(var(--background-dark), var(--background-dark)),
-    url("../assets/img/IMG_9705.JPEG");
+    url("../assets/img/painel/img7.JPEG");
   background-position: center;
   background-color: #000000;
   background-size: cover;
