@@ -690,3 +690,17 @@ a {
   font-family: "Luckiest Guy", cursive;
   color: var(--gray);
 }
+
+@media (min-width: 420px) {
+  .parceiro-logo {
+    margin: 10px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .parceiro-logo {
+    margin: 5px;
+    height: 30px;
+  }
+}
