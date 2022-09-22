@@ -681,6 +681,8 @@ a {
   /* font-family: "Permanent Marker", cursive; */
   font-family: "Luckiest Guy", cursive;
   color: var(--gray);
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .quadro h1,
